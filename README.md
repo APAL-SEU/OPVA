@@ -12,8 +12,8 @@ Papers: [IEEE TAC 2024](https://doi.org/10.1109/TAFFC.2024.3374875) · [Computer
 |----------|------|
 | **Paper (IEEE TAC)** | https://doi.org/10.1109/TAFFC.2024.3374875 · [author PDF](https://tianyi-zhang-tz.github.io/Tianyi-Zhang-TZ/papers/LLMs_Personality.pdf) |
 | **Paper (CHB)** | https://doi.org/10.1016/j.chb.2023.108128 |
-| **Project Page** | [English](index.html), [中文](zh.html) |
-| **User Agreement** | [OPVA EULA](user_agreement.html) |
+| **Project Page** | [English](https://apal-seu.github.io/OPVA/), [中文](https://apal-seu.github.io/OPVA/zh.html) |
+| **User Agreement** | [OPVA EULA](https://apal-seu.github.io/OPVA/user_agreement.html) |
 | **Dataset access** | Email [t.zhang@seu.edu.cn](mailto:t.zhang@seu.edu.cn?subject=OPVA%20Dataset%20Access%20Request) |
 
 ## News
