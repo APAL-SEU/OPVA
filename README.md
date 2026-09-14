@@ -61,7 +61,7 @@ After access is granted, the data release uses split folders `Training` / `Valid
 
 ## Getting Started
 
-1. Read the [User Agreement](user_agreement.html).
+1. Read the [User Agreement](https://apal-seu.github.io/OPVA/user_agreement.html).
 2. Have a researcher with a permanent position sign the form. Students may be listed as participants.
 3. Email the signed PDF to **Tianyi Zhang** at [t.zhang@seu.edu.cn](mailto:t.zhang@seu.edu.cn), with subject `OPVA Dataset Access Request`. Include your name, institution, position, and a brief research statement.
 
@@ -94,4 +94,4 @@ If you use OPVA, please cite both papers:
 
 ## License
 
-The dataset is released for academic, non-commercial, not-for-profit research. Use of OPVA requires agreeing to the [User Agreement](user_agreement.html). Do not redistribute interview videos or attempt to re-identify participants.
+The dataset is released for academic, non-commercial, not-for-profit research. Use of OPVA requires agreeing to the [User Agreement](https://apal-seu.github.io/OPVA/user_agreement.html). Do not redistribute interview videos or attempt to re-identify participants.
