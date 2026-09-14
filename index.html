@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPVA - Facet-Activated Dataset for AVI Personality Assessment</title>
+  <meta name="description" content="OPVA is a facet-activated dataset for personality and job-related competency assessment from asynchronous video interviews, with 5,472 videos from 684 participants.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="alternate" hreflang="zh-CN" href="zh.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@600&family=Source+Sans+3:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <img class="nav-logo-icon" src="favicon.svg" alt="">
+        OPVA
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#labels">Labels</a></li>
+        <li><a href="#papers">Papers</a></li>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#citation">Citation</a></li>
+        <li><a class="nav-cta" href="user_agreement.html">User Agreement</a></li>
+      </ul>
+      <div class="nav-lang">
+        <a class="lang-active" href="index.html" hreflang="en">EN</a>
+        <span class="lang-divider">/</span>
+        <a href="zh.html" hreflang="zh-CN">中文</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="hero-badges">
+        <span class="badge badge-venue">IEEE TAC 2024</span>
+        <span class="badge badge-venue">Computers in Human Behavior 2024</span>
+        <span class="badge badge-type">Multimodal Dataset</span>
+      </div>
+      <h1 class="hero-title">OPVA</h1>
+      <p class="hero-subtitle">
+        A Facet-Activated Dataset for
+        <em>Personality</em> and <em>Competency Assessment</em>
+        in Asynchronous Video Interviews
+      </p>
+      <div class="authors">
+        <p class="author-list">
+          <a href="https://tianyi-zhang-tz.github.io/Tianyi-Zhang-TZ/">Tianyi Zhang</a><sup>1,*</sup>,
+          Antonis Koutsoumpis<sup>2</sup>,
+          Janneke K. Oostrom<sup>2</sup>,
+          Djurre Holtrop<sup>2</sup>,
+          Sina Ghassemi<sup>3</sup>,
+          Reinout E. de Vries<sup>3</sup>
+        </p>
+        <div class="affiliations">
+          <p><sup>1</sup> Key Laboratory of Child Development and Learning Science (Ministry of Education), School of Biological Sciences and Medical Engineering, Southeast University, Nanjing, China</p>
+          <p><sup>2</sup> Department of Social Psychology, Tilburg University, the Netherlands</p>
+          <p><sup>3</sup> Department of Experimental and Applied Psychology, Vrije Universiteit Amsterdam, the Netherlands</p>
+        </div>
+        <p class="corresponding">* Corresponding author: Tianyi Zhang (<a href="mailto:t.zhang@seu.edu.cn">t.zhang@seu.edu.cn</a>)</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-ghost" href="#papers">Papers</a>
+        <a class="btn btn-primary" href="#access">Dataset</a>
+        <a class="btn btn-ghost" href="#citation">Cite</a>
+        <a class="btn btn-ghost" href="user_agreement.html">User Agreement</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="stats-bar">
+    <div class="container-wide stats-grid">
+      <div class="stat-card">
+        <span class="stat-value">684</span>
+        <span class="stat-label">Participants</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">5,472</span>
+        <span class="stat-label">Interview Videos</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">8</span>
+        <span class="stat-label">Facet Questions</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">HEXACO</span>
+        <span class="stat-label">X / C + Competencies</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Overview</span>
+        <h2>Psychometrically Grounded AVI Assessment</h2>
+        <p class="section-lead">
+          Asynchronous video interviews (AVIs) let applicants record one-way answers to fixed questions.
+          OPVA was collected as a mock management-traineeship application so that personality and interview performance
+          can be studied under a standardized selection context, rather than from short, task-free social media clips.
+          Interview questions follow <strong>Trait Activation Theory</strong> at the <strong>facet</strong> level:
+          each of the eight past-behaviour prompts targets one Extraversion or Conscientiousness facet.
+        </p>
+      </div>
+
+      <div class="highlights">
+        <article class="highlight-card">
+          <span class="highlight-icon">01</span>
+          <h3>Facet-Activated Interview Protocol</h3>
+          <p>
+            Participants answered
+            <span class="key-term">eight workplace past-behaviour questions</span>
+            (one per Extraversion facet: Social self-esteem, Social boldness, Sociability, Liveliness;
+            one per Conscientiousness facet: Organization, Diligence, Perfectionism, Prudence).
+            There are no generic interview questions in this release.
+          </p>
+        </article>
+        <article class="highlight-card">
+          <span class="highlight-icon">02</span>
+          <h3>Expert-Validated Dual Labels</h3>
+          <p>
+            OPVA provides HEXACO-60 self-reports, observer-rated Extraversion and Conscientiousness
+            at both factor and facet level (four trained raters, HEXACO-BARS),
+            and recruiter-rated job competencies (two professional recruiters per participant).
+          </p>
+        </article>
+        <article class="highlight-card">
+          <span class="highlight-icon">03</span>
+          <h3>Open Dataset for Research</h3>
+          <p>
+            The release includes interview videos, psychometric labels, demographics,
+            and an official subject-level split. Academic researchers can request access after signing the user agreement.
+            The same data underpin the CHB 2024 psychometric study and the IEEE TAC 2024 LLM evaluation.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="dataset">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dataset</span>
+        <h2>The OPVA Benchmark</h2>
+        <p class="section-lead">
+          Collection and annotation follow Zhang et al. (IEEE TAC 2024) and Koutsoumpis et al. (CHB 2024).
+          This video release contains the 684 participants who have complete interview recordings.
+          Zhang et al. (IEEE TAC 2024) report 685 labeled participants; one extra ID has labels but no video files.
+        </p>
+      </div>
+
+      <div class="dataset-layout">
+        <div class="dataset-top">
+          <div class="dataset-info">
+            <h3>Collection Protocol</h3>
+            <ul class="feature-list">
+              <li><strong>Recruitment:</strong> Prolific (n = 889) plus a snowball sample (n = 58). Participants were excluded for corrupted media or annotations, failed attention checks, noncompliant HEXACO responding, or observer flags. The papers retain 685 labeled participants; this video release keeps the <strong>684</strong> with complete mp4 files.</li>
+              <li><strong>Task:</strong> Simulated management traineeship AVI. Target length 1–2 minutes per answer; no pause or re-recording. Each participant was paid $7.</li>
+              <li><strong>Questions:</strong> 26 candidate items were reviewed by three personality experts (facet ICC(2, 3) = 0.99). The final AVI uses one question per Extraversion or Conscientiousness facet (absolute agreement ICC(2, 3) = 1).</li>
+              <li><strong>Self-reports:</strong> HEXACO-60 (10 items per domain) plus demographics (age, gender, education, work experience).</li>
+              <li><strong>Annotation:</strong> Four independent raters scored Extraversion and Conscientiousness facets with HEXACO-BARS after the four trait-relevant questions. Six professional recruiters (two per participant) scored four competencies and overall hireability.</li>
+            </ul>
+          </div>
+          <div class="dataset-specs">
+            <h3>Key Properties</h3>
+            <table class="spec-table">
+              <tbody>
+                <tr><th>Participants</th><td>684 (231 men / 446 women / 7 non-binary)</td></tr>
+                <tr><th>Videos</th><td>5,472 AVI responses (8 per person)</td></tr>
+                <tr><th>Age</th><td>31.10 ± 11.53 years</td></tr>
+                <tr><th>Education</th><td>4 &lt; high school; 55 high school; 183 some college; 305 college; 137 postgraduate</td></tr>
+                <tr><th>Work experience</th><td>11.21 ± 10.52 years</td></tr>
+                <tr><th>Personality labels</th><td>HEXACO-60 self + observer X / C (factor + facet)</td></tr>
+                <tr><th>Observer ICC</th><td>ICC(1, 4) = 0.91 (X), 0.77 (C)</td></tr>
+                <tr><th>Competency labels</th><td>4 competencies + overall hireability; mean ICC(1, 2) = 0.56</td></tr>
+                <tr><th>Official split</th><td>Subject-level 70 / 10 / 20 (483 / 67 / 134)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="comparison-banner">
+          <div class="comparison-item comparison-old">
+            <span class="comparison-label">Prior datasets</span>
+            <p>Short in-the-wild clips | Crowdsourced first impressions | Domain-level questions only | Weak interview relevance</p>
+          </div>
+          <div class="comparison-arrow" aria-hidden="true">→</div>
+          <div class="comparison-item comparison-new">
+            <span class="comparison-label">OPVA</span>
+            <p>Structured AVIs | Trained rater &amp; recruiter BARS | HEXACO facets + competencies | Eight facet-activating questions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="questions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Protocol</span>
+        <h2>Interview Questions</h2>
+        <p class="section-lead">
+          Question order is fixed. Each item is a past-behaviour prompt, contextualized at work,
+          that activates one HEXACO facet of Extraversion or Conscientiousness.
+          Factor scores in this release are the mean of the four corresponding facet scores.
+        </p>
+      </div>
+      <table class="questions-table">
+        <thead>
+          <tr>
+            <th style="width: 8%">#</th>
+            <th>Interview question</th>
+            <th style="width: 22%">Target facet</th>
+            <th style="width: 18%">Factor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="q-text">Remember a time when you were in a social setting where you didn't know any of the other people, and this affected the extent to which you felt (un)comfortable with yourself. Could you describe your personality in that situation?</td>
+            <td>Social self-esteem</td>
+            <td>Extraversion</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="q-text">Remember a time when you finished using equipment at work and you could put everything back in place (or not). Could you describe your personality in that situation?</td>
+            <td>Organization</td>
+            <td>Conscientiousness</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="q-text">Remember a time when you took part in a group discussion and you could assume a listening or leading role. Could you describe your personality in that situation?</td>
+            <td>Social boldness</td>
+            <td>Extraversion</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td class="q-text">Remember a time when a task was more challenging than usual and that you could decide to push yourself harder or leave it aside (or pass it to someone else). Could you describe your personality in that situation?</td>
+            <td>Diligence</td>
+            <td>Conscientiousness</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="q-text">Remember a time when you were invited to an after-work social event and you could decide to join or skip it. Could you describe your personality in that situation?</td>
+            <td>Sociability</td>
+            <td>Extraversion</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td class="q-text">Remember a time when a task required paying attention to details in order to avoid making mistakes. Could you describe your personality in that situation?</td>
+            <td>Perfectionism</td>
+            <td>Conscientiousness</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td class="q-text">Remember a time when your team members were feeling down and you could decide to raise their spirit (or not). Could you describe your personality in that situation?</td>
+            <td>Liveliness</td>
+            <td>Extraversion</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td class="q-text">Remember a time when you wanted something badly at work and you could act on an impulse (or not) in order to get it. Could you describe your personality in that situation?</td>
+            <td>Prudence</td>
+            <td>Conscientiousness</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="labels">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Labels</span>
+        <h2>From HEXACO Facets to Job Competencies</h2>
+        <p class="section-lead">
+          Each participant has HEXACO-60 self-reports on all six domains (1–5).
+          Observer personality ratings cover Extraversion and Conscientiousness at factor and facet level
+          (the interview questions activate these two traits). Recruiters score four competencies plus overall hireability.
+          All observer and recruiter scores use a 5-point BARS.
+        </p>
+      </div>
+
+      <div class="traits-grid" style="margin-bottom: 1.25rem;">
+        <article class="trait-domain">
+          <span class="trait-code">X</span>
+          <h3>Extraversion</h3>
+          <ul>
+            <li>Social Self-Esteem (q1)</li>
+            <li>Social Boldness (q3)</li>
+            <li>Sociability (q5)</li>
+            <li>Liveliness (q7)</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">C</span>
+          <h3>Conscientiousness</h3>
+          <ul>
+            <li>Organization (q2)</li>
+            <li>Diligence (q4)</li>
+            <li>Perfectionism (q6)</li>
+            <li>Prudence (q8)</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">H</span>
+          <h3>Honesty-Humility</h3>
+          <ul>
+            <li>Self-report (HEXACO-60)</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">E</span>
+          <h3>Emotionality</h3>
+          <ul>
+            <li>Self-report (HEXACO-60)</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">A</span>
+          <h3>Agreeableness</h3>
+          <ul>
+            <li>Self-report (HEXACO-60)</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">O</span>
+          <h3>Openness</h3>
+          <ul>
+            <li>Self-report (HEXACO-60)</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="traits-grid traits-grid-5">
+        <article class="trait-domain">
+          <span class="trait-code">Do</span>
+          <h3>Development orientation</h3>
+          <ul>
+            <li>Effort to broaden skills and grow professionally</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">Cf</span>
+          <h3>Communication flexibility</h3>
+          <ul>
+            <li>Convey a message in different ways depending on the audience</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">Pe</span>
+          <h3>Persuasiveness</h3>
+          <ul>
+            <li>Gain agreement through arguments, authority, and/or diplomacy</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">Qo</span>
+          <h3>Quality orientation</h3>
+          <ul>
+            <li>Effort to meet or exceed quality standards</li>
+          </ul>
+        </article>
+        <article class="trait-domain">
+          <span class="trait-code">Hi</span>
+          <h3>Overall hireability</h3>
+          <ul>
+            <li>Suitability for the management traineeship role</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="papers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Papers</span>
+        <h2>Publications using OPVA</h2>
+        <p class="section-lead">
+          There is not yet a standalone dataset paper. Please cite the two studies that introduced and evaluated this AVI corpus.
+          Prompting and analysis scripts from the LLM study are in
+          <a href="https://github.com/Tianyi-Zhang-TZ/GPT_interview">GPT_interview</a>.
+        </p>
+      </div>
+      <div class="pub-list">
+        <article class="pub-card">
+          <h3>Can Large Language Models Assess Personality From Asynchronous Video Interviews? A Comprehensive Evaluation of Validity, Reliability, Fairness, and Rating Patterns</h3>
+          <p class="pub-meta">Tianyi Zhang, Antonis Koutsoumpis, Janneke K. Oostrom, Djurre Holtrop, Sina Ghassemi, Reinout E. de Vries. <em>IEEE Transactions on Affective Computing</em>, 15(3), 1769–1785, 2024.</p>
+          <p>
+            Zero-shot evaluation of GPT-3.5 and GPT-4 on the 685 OPVA interviews, compared with a task-specific model and human annotators.
+            LLMs reach similar or better validity for Extraversion, but show uneven trait performance, limited reliability, and some biases—especially for Conscientiousness and hireability.
+          </p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1109/TAFFC.2024.3374875">IEEE Xplore / DOI</a>
+            <a href="https://tianyi-zhang-tz.github.io/Tianyi-Zhang-TZ/papers/LLMs_Personality.pdf">Author PDF</a>
+            <a href="https://github.com/Tianyi-Zhang-TZ/GPT_interview">Code (GPT_interview)</a>
+          </p>
+        </article>
+        <article class="pub-card">
+          <h3>Beyond traditional interviews: Psychometric analysis of asynchronous video interviews for personality and interview performance evaluation using machine learning</h3>
+          <p class="pub-meta">Antonis Koutsoumpis, Sina Ghassemi, Janneke K. Oostrom, Djurre Holtrop, Ward van Breda, Tianyi Zhang, Reinout E. de Vries. <em>Computers in Human Behavior</em>, 154, 108128, 2024.</p>
+          <p>
+            Psychometric analysis of the same facet-activated AVI protocol. Models using words, facial expressions, and voice explain more variance in observer Extraversion / Conscientiousness and interview performance than in self-reports, with stronger prediction on trait-relevant questions, consistent with Trait Activation Theory.
+          </p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1016/j.chb.2023.108128">ScienceDirect / DOI</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="access">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Access</span>
+        <h2>How to Obtain OPVA</h2>
+        <p class="section-lead">
+          OPVA is released for academic, non-commercial research. Please sign the user agreement and email it to Tianyi Zhang.
+          Access is granted after the signed form is reviewed.
+        </p>
+      </div>
+
+      <div class="access-grid">
+        <div class="access-card">
+          <h3>Request procedure</h3>
+          <ol class="access-steps">
+            <li><span class="step-num">1</span><span>Download the <a href="user_agreement.html">OPVA User Agreement</a> and print or export it as PDF.</span></li>
+            <li><span class="step-num">2</span><span>The form must be signed by a researcher with a permanent position (e.g., professor or assistant/associate professor). Students may be listed as participants.</span></li>
+            <li><span class="step-num">3</span><span>Email the signed PDF to Tianyi Zhang. Include your name, institution, position, and a brief description of the intended research use.</span></li>
+          </ol>
+          <p class="mail-box">
+            Contact: <strong>Tianyi Zhang</strong><br>
+            Email: <a href="mailto:t.zhang@seu.edu.cn?subject=OPVA%20Dataset%20Access%20Request">t.zhang@seu.edu.cn</a><br>
+            Subject: <code>OPVA Dataset Access Request</code>
+          </p>
+        </div>
+        <div class="access-card">
+          <h3>What is released</h3>
+          <ul class="feature-list">
+            <li>Asynchronous video interview recordings from 684 participants (8 questions each)</li>
+            <li>HEXACO-60 self-reports and observer-rated Extraversion / Conscientiousness (factor + facet)</li>
+            <li>Recruiter-rated competencies and overall hireability</li>
+            <li>Demographic information and the official subject-level data split</li>
+            <li>Column documentation in <code>CODEBOOK.md</code> / <code>CODEBOOK_zh.md</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="notice">
+        The dataset may be used only for academic, non-commercial, not-for-profit research.
+        Redistribution is not permitted. Videos and still frames must not be used in any way that could cause
+        the original participants embarrassment or mental anguish. See the
+        <a href="user_agreement.html">User Agreement</a> for the full terms.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="citation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Citation</span>
+        <h2>How to Cite</h2>
+        <p class="section-lead">
+          If you use the OPVA dataset, please cite both papers below.
+        </p>
+      </div>
+      <div class="citation-box">
+        <button class="btn btn-copy" id="copy-btn" type="button">
+          <span class="copy-text">Copy BibTeX</span>
+          <span class="copy-done" hidden>Copied!</span>
+        </button>
+        <pre class="bibtex" id="bibtex"><code>@article{zhang2024llms,
+  author  = {Zhang, Tianyi and Koutsoumpis, Antonis and Oostrom, Janneke K. and Holtrop, Djurre and Ghassemi, Sina and de Vries, Reinout E.},
+  title   = {Can Large Language Models Assess Personality From Asynchronous Video Interviews? A Comprehensive Evaluation of Validity, Reliability, Fairness, and Rating Patterns},
+  journal = {IEEE Transactions on Affective Computing},
+  year    = {2024},
+  volume  = {15},
+  number  = {3},
+  pages   = {1769--1785},
+  doi     = {10.1109/TAFFC.2024.3374875}
+}
+
+@article{koutsoumpis2024beyond,
+  author  = {Koutsoumpis, Antonis and Ghassemi, Sina and Oostrom, Janneke K. and Holtrop, Djurre and van Breda, Ward and Zhang, Tianyi and de Vries, Reinout E.},
+  title   = {Beyond traditional interviews: Psychometric analysis of asynchronous video interviews for personality and interview performance evaluation using machine learning},
+  journal = {Computers in Human Behavior},
+  year    = {2024},
+  volume  = {154},
+  pages   = {108128},
+  doi     = {10.1016/j.chb.2023.108128}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-wide footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">OPVA</span>
+        <p>Key Laboratory of Child Development and Learning Science (Ministry of Education), Southeast University, with collaborators at Tilburg University and Vrije Universiteit Amsterdam.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#access">Dataset</a>
+        <a href="user_agreement.html">Agreement</a>
+        <a href="zh.html" hreflang="zh-CN">中文</a>
+        <a href="mailto:t.zhang@seu.edu.cn">Contact</a>
+        <a href="#citation">Citation</a>
+      </div>
+      <p class="footer-copy">
+        © 2024–2026 OPVA Authors. Released for academic research.
+      </p>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>

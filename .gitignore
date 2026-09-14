@@ -1,0 +1,7 @@
+Training/
+Validation/
+Testing/
+*.mp4
+Training.csv
+Validation.csv
+Testing.csv
